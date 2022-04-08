@@ -13,6 +13,8 @@ const ListScreen = () => {
         { name: "friends-8" },
         { name: "friends-9" },
         { name: "friends-10" },
+        { name: "friends-11" },
+        { name: "friends-12" },
     ];
     return (
         <FlatList
@@ -22,7 +24,7 @@ const ListScreen = () => {
             renderItem={({ item }) => (
                 <Text
                     style={styles.textStyle}
-                >{item.name}</Text>
+                >{item.name.replace(/-/g, ' - ')}</Text>
             )}
         />
     );
@@ -32,7 +34,10 @@ const styles = StyleSheet.create({
     textStyle: {
         fontSize: 18,
         color: 'black',
-        margin: 40
+        padding: 20,
+        margin: 8,
+        backgroundColor: 'lightblue',
+        borderRadius: 5
     },
 });
 
