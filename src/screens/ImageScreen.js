@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, StyleSheet, View, Button } from 'react-native';
+import { StyleSheet, View, Button } from 'react-native';
 import ImageDetail from "./components/ImageDetail";
 
 const ImageScreen = ({ navigation }) => {
