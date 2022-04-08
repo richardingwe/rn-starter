@@ -17,6 +17,7 @@ const ListScreen = () => {
     return (
         <FlatList
             keyExtractor={data => data.name}
+            showsVerticalScrollIndicator={false}
             data={data}
             renderItem={({ item }) => (
                 <Text
