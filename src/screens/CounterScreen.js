@@ -7,6 +7,7 @@ export default function CounterScreen() {
         <View>
             <Button title="Increase" onPress={() => setCounter(counter => counter + 1)} />
             <Button title="Decrease" onPress={() => setCounter(counter => counter - 1)} />
+            <Button title="Reset" onPress={() => setCounter(counter => counter = 0)} />
             <Text style={styles.text}>{counter}</Text>
         </View>
     );
