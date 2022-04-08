@@ -2,14 +2,14 @@ import React from 'react';
 import { Text, StyleSheet } from 'react-native';
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>Richard Ingwe</Text>;
+  return <Text style={styles.text}>Hello world!</Text>;
 };
 
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
     color: 'red',
-    backgroundColor: 'gray'
+    backgroundColor: 'blue'
   },
 });
 
